@@ -1,0 +1,188 @@
+<!--{% set title = 'Contact Us' %}-->
+{% extends 'layout.html' %}
+{% block content %}
+<!-- Header Carousel -->
+<header id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="fill" style="background-image:url('../public/images/index/DashboardPiezasImpresas.jpg');"></div>
+            <div class="carousel-caption">
+                <h2>Servicio de impresión 3D</h2>
+            </div>
+        </div>
+        <div class="item">
+            <div class="fill" style="background-image:url('../public/images/index/productos.jpg');"></div>
+            <div class="carousel-caption">
+                <h2>Impresoras 3D y consumibles</h2>
+            </div>
+        </div>
+        <div class="item">
+            <div class="fill" style="background-image:url('../public/images/index/capacitacion.jpg');"></div>
+            <div class="carousel-caption">
+                <h2>Capacitación y asesoria</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
+</header>
+
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Marketing Icons Section -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                Bienvenido a Mexprint3r
+            </h1>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-fw fa-check"></i>¿Que es una impresora 3D?</h4>
+                </div>
+                <div class="panel-body">
+                    <p>Las impresoras 3D son poderosas herramientas que permiten la fabricación de piezas y modelos tangible y en 3 dimensiones, por medio de alguna técnica de MANUFACTURA ADITIVA, que como su nombre lo indica basa su funcionamiento en la adición de material en una sucesión de capas hasta formar un volumen.</p>
+                    <a href="#" class="btn btn-default">Saber más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-fw fa-gift"></i>Aplicaciones</h4>
+                </div>
+                <div class="panel-body">
+                    <p>Los usos y aplicaciones de la impresión 3D son muy variados, pues las aplicaciones de esta tecnología se encuentran en una gran cantidad de indutrias como son la arquitectura, ingeniería, medicina, educación, etc; por lo cual las aplicaciones de esta tecnología quedan solo restringidas por la capacidad imaginativa del usuario.</p>
+                    <a href="#" class="btn btn-default">Saber más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-fw fa-compass"></i>¿Que necesito?</h4>
+                </div>
+                <div class="panel-body">
+                    <p>Antes de que te des cuenta estaras creando cosas magnificas, el proceso es sencillo pero en escencia solo necesitas llevar a cabo 4 pasos esenciales.</p>
+                    <ol>
+                      <li>Conceptualiza tu idea.</li>
+                      <li>Diseña el modelo.</li>
+                      <li>Detalla el diseño.</li>
+                      <li>Fabrica tu modelo.</li>
+                    </ol>
+                    <a href="#" class="btn btn-default">Saber más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Portfolio Section -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header">Historias de éxito ...</h2>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a href="portfolio-item.html">
+                <img class="img-responsive img-portfolio img-hover" src="../public/images/index/Volante.jpg" alt="">
+                <center><h4>Volante formula 1</h4></center>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a href="portfolio-item.html">
+                <img class="img-responsive img-portfolio img-hover" src="../public/images/index/animatronix.png" alt="">
+                <center><h4>Animatronix</h4></center>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a href="portfolio-item.html">
+                <img class="img-responsive img-portfolio img-hover" src="../public/images/index/simuladorVuelo.jpg" alt="">
+                <center><h4>Simulador de vuelo</h4></center>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a href="portfolio-item.html">
+                <img class="img-responsive img-portfolio img-hover" src="../public/images/index/Corazon.png" alt="">
+                <center><h4>Corazón artificial</h4></center>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a href="portfolio-item.html">
+                <img class="img-responsive img-portfolio img-hover" src="../public/images/index/estereo.jpg" alt="">
+                <center><h4>Base esteréo</h4></center>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a href="portfolio-item.html">
+                <img class="img-responsive img-portfolio img-hover" src="../public/images/index/exoesqueleto.jpg" alt="">
+                <center><h4>Exoesqueleto</h4></center>
+            </a>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Features Section -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header">Cotizador Online</h2>
+        </div>
+        <div class="col-md-6">
+            <p>Quieres saber el costo de tu modelo, es muy sencillo solo usa nuestro cotizador online.</p>
+            <ol>
+                <li>Ingresa a nuestro cotizador, pulsando del boton de acá abajo.</li>
+                <li>Carga tu archivo</li>
+                <li>Centra y orienta el modelo dentro de la plataforma.</li>
+                <li>Selecciona los materiales.</li>
+                <li>Ingresa tus datos y recibe por correo la cotización</li>
+            </ol>
+            <p>Esta es una versión de prueba, la cotización final puede variar, si el tamaño del modelo es mayor al volumen desplegado por la aplicación será necesario se ponga en contacto con un asesor.</p>
+        </div>
+        <div class="col-md-6">
+            <img class="img-responsive" src="../public/images/index/Makerware.png" alt="">
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Call to Action Section -->
+    <div class="well">
+        <div class="row">
+            <div class="col-md-8">
+                <p>No dudes mas, llamanos estamos a tus ordenes.</p>
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-lg btn-default btn-block" href="/contact">Contactar</a>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+<!-- /.container -->
+
+<!-- Script to Activate the Carousel -->
+<script>
+$('.carousel').carousel({
+    interval: 5000 //changes the speed
+})
+</script>
+
+{% endblock %}
