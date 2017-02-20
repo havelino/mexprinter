@@ -58,12 +58,14 @@
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Mensaje:</label>
-                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                            <textarea rows="10" cols="100" class="form-control" id="content" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
                         </div>
                     </div>
                     <div id="success"></div>
                     <!-- For success/fail messages -->
-                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    <button type="submit" id="send_email"class="btn btn-primary">Enviar Mensaje</button>
+                    <br></br>
+                    <span id="message"></span>
                 </form>
             </div>
 
@@ -72,6 +74,27 @@
 
       </div>
       <!-- /.container -->
+
+      <script>
+        $(document).ready(function(){
+            var from,to,subject,text;
+              $("#send_email").click(function(){
+
+                  to=$("#email").val();
+                  subject=$("#name").val();
+                  text=$("#content").val();
+
+                    console.log('sending mail to:'+to);
+              $("#message").text("Enviando el correo electrónico a "+to +" ...");
+
+              $.get("../contact/send/mail",{to:to,subject:subject,text:text},function(data){
+                    if(data=="sent"){
+                        $("#message").empty().html("El correo electrónico ha sido enviado correctamente a "+to+". Porfavor revisa tu bandeja de entrada.");
+                        }
+                  });
+          });
+      });
+      </script>
 
 
 {% endblock %}
