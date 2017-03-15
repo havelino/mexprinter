@@ -1,0 +1,173 @@
+{% extends 'layout.njk' %}
+{% block content %}
+
+<!-- Page Content -->
+    <div class="container">
+
+        <hr>
+
+
+        <!-- Service Panels -->
+        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Nuestros servicios</h2>
+            </div>
+
+        </div>
+
+        <!-- Service Tabs -->
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <ul id="myTab" class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-cubes fa-5x"></i>
+                      <h4>Manufactura Digital <br><br></h4></a>
+                    </li>
+                    <li class=""><a href="#service-two" data-toggle="tab"><i class="fa fa-cube fa-5x"></i>
+                      <h4>Modelado 3D<br><br></h4></a>
+                    </li>
+                    <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-wrench fa-5x"></i>
+                      <h4>Revisión y Mantenimiento <br>de impresoras 3D</h4></a>
+                    </li>
+                    <li class=""><a href="#service-four" data-toggle="tab"><i class="fa fa-users fa-5x"></i>
+                      <h4>Asesoría especialida<br><br></h4></a>
+                    </li>
+                </ul>
+
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="service-one">
+
+                      <div class="row">
+                        <div class="col-md-6">
+                            <hr>
+                          <p class="text-justify">También conocido como impresión 3D, prototipado rapido o manufactura aditiva, en la cual cobtamos con amplia experiencia en la fabricación de  piezas y modelos, para nosotros el trato hacia nuestros clientes es personalizada y damos una extensa retroalimentación  sobre la fabricación del modelo, con el objetivo de obtener os mejores resultados para nuestros clientes.
+                             Envíanos tu pieza o figura para poder cotizar, el costo de la misma y empezar a hacer tus ideas realidad.</p>
+                          <p class="text-justify">Trabajamos por medio de FDM, obteniendo piezas rígidas y durables, sin embargo es necesario tomes en cuenta que los detalles mínimos alcanzados son de 1mm. El archivo debe ser enviado en formato <mark>*.stl, *.step o *.obj</mark></p>
+                          <p class="text-justify">El costo de fabricación esta en función al tiempo de impresión del mismo,el cual es de <mark>$2.50 pesos/minuto</mark>, sin gastos de envió y para proyectos con una duración superior a las 10 hrs, el costo se reduce a <mark>$2.00 pesos/minuto</mark>, con gastos de envió incluidos para la DF y zona metropolitana.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                              <li data-target="#myCarousel" data-slide-to="1"></li>
+                              <li data-target="#myCarousel" data-slide-to="2"></li>
+                              <li data-target="#myCarousel" data-slide-to="3"></li>
+                              <li data-target="#myCarousel" data-slide-to="4"></li>
+                              <li data-target="#myCarousel" data-slide-to="5"></li>
+                              <li data-target="#myCarousel" data-slide-to="6"></li>
+                              <li data-target="#myCarousel" data-slide-to="7"></li>
+                              <li data-target="#myCarousel" data-slide-to="8"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                              <div class="item active">
+                                <img src="../public/images/services/skull.jpg" alt="Exoesqueleto">
+                              </div>
+                              <div class="item">
+                                <img src="../public/images/services/box.jpg" alt="Soporte mecánico">
+                              </div>
+                              <div class="item">
+                                <img src="../public/images/services/cono.jpg" alt="Impresión dual">
+                              </div>
+                              <div class="item">
+                                <img src="../public/images/services/instrument.jpg" alt="Carcasa">
+                              </div>
+                              <div class="item">
+                                <img src="../public/images/services/parts.jpg" alt="Piezas mecánicas">
+                              </div>
+                              <div class="item">
+                                <img src="../public/images/services/piece.jpg" alt="Impresión dual">
+                              </div>
+                              <div class="item">
+                                <img src="../public/images/services/stereo.jpg" alt="Soporte estéreo">
+                              </div>
+                              <div class="item">
+                                <img src="../public/images/services/tank.jpg" alt="Tanque ">
+                              </div>
+                              <div class="item">
+                                <img src="../public/images/services/volante.jpg" alt="Volante">
+                              </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                              <span class="icon-prev"></span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                              <span class="icon-next"></span>
+                            </a>
+
+
+                        </div>
+                      </div>
+                      </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="service-two">
+
+                      <div class="col-md-6">
+                        <hr>
+                        <p class="text-justify">Tienes una gran idea en mente, pero no sabes como hacerla realidad, no te preocupes nuestro departamento de diseñadores tratara tu caso con toda confidencialidad y al final del proceso de diseño te haremos entrega de los archivos fuente. Nosotros partiremos desde los requerimientos mas básicos aistiendote con nuestra amplia experiancia en la fabricación de modelos, así como la optimización para reducción de costos, mayor durabilidad y mejor emprendimiento en producción, hasta la completa documentación de tu proyecto en planos, simulaciones y requerimientos adicionales que necesites.</p>
+                        <p>El costo de servicio es de $150 pesos la hora de diseño 3D, documentación o asistencia, si necesitas mas información porfavor no dudes en llamarnos, con mucho gusto te atenderemos y resolveremos todas tus inquietudes.</p>
+                      </div>
+                      <div class="col-md-6">
+                      </div>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="service-three">
+
+                      <div class="col-md-6">
+                        <hr>
+                        <p class="text-justify">Has experimentado problemas al realizar la impresión de piezas y modelos, es posible que necesites darle mantenimiento preventivo a tu impresoras 3D.
+                           Nuestro servicio de mantenimiento preventivo de la impresora 3D incluye:</p>
+                           <br>
+                           <ul class="list-group">
+                            <ls style="display:block;">*Calibración de mesa.</ls>
+                            <ls style="display:block;">*Cambio de boquilla.</ls>
+                            <ls style="display:block;">*Ubicación de husillos y guías.</ls>
+                            <ls style="display:block;">*Ajuste de cabezal de impresión.</ls>
+                            <ls style="display:block;">*Soporte técnico.</ls>
+                           </ul>
+                        <p class="text-justify">Contamos con servicios de mantenimiento y reparación de impresoras 3D de tipo <strong>Replicator 2, Replicator 2X, Duplicator, ZCube y GRID II </strong>, contamos con refacciones y partes, por lo que no hay que esperar demoras en cuanto al cambio de las mismas. Si ya cuentas con una impresora 3D y requieres de nuestros servicios no dudes en contactarnos.</p>
+                      </div>
+                      <div class="col-md-6">
+                          <img src="../public/images/services/maintenance.jpg" alt="Mantenimiento impresora 3D" width="100%">
+                      </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="service-four">
+
+                      <div class="col-md-6">
+                        <hr>
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                      </div>
+                      <div class="col-md-6">
+                      </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+      $(document).ready(function(){
+        $('.carousel').carousel({
+        interval: 5000 //changes the speed
+      })
+    });
+    </script>
+    <!-- /.container -->
+
+  {% endblock %}

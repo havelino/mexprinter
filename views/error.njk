@@ -1,0 +1,20 @@
+{% set title = 'Error en la aplicación' %}
+
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="row">
+  <div class="col-sm-12 col-md-offset-2 col-md-8 text-center">
+      <h2 class="text-strong">Disculpa las molestias</h2>
+      <br/>
+      <br/>
+      <div class="alert alert-danger text-center" role="alert">
+        <h4 class="text-strong">A surgido un error en la aplicación</h4>
+        <br/>
+        <span class="fa fa-frown-o fa-3x" aria-hidden="true"></span>
+        <p>{{ error }}</p>
+      </div>
+  </div>
+</div>
+
+
+{% endblock %}
