@@ -11,7 +11,8 @@
             <!-- Map Column -->
             <div class="col-md-8">
                 <!-- Embedded Google Map -->
-                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+                <!--iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe-->
+                <iframe src="https://maps.google.com/maps?q=19.487992,+-99.133744+(Mapa)&amp;t=m&amp;z=16&amp;iwloc=A&amp;output=embed" frameborder="0" style="border:1;width:100%;height:400px;"></iframe>
             </div>
             <!-- Contact Details Column -->
             <div class="col-md-4">
@@ -64,7 +65,7 @@
                     </div>
                     <div id="success"></div>
                     <!-- For success/fail messages -->
-                    <button type="submit" id="send_email"class="btn btn-primary">Enviar Mensaje</button>
+                    <button type="button" id="send_email"class="btn btn-primary">Enviar Mensaje</button>
                     <br></br>
                     <span id="message"></span>
                 </form>
@@ -81,16 +82,16 @@
             var from,to,subject,text;
               $("#send_email").click(function(){
 
-                  to=$("#email").val();
-                  subject=$("#name").val();
-                  text=$("#content").val();
+                  email=$("#email").val();
+                  name=$("#name").val();
+                  message=$("#content").val();
+                  phone=$("#phone").val();
 
-                    console.log('sending mail to:'+to);
-              $("#message").text("Enviando el correo electrónico a "+to +" ...");
+              $("#message").text("Enviando el correo electrónico . . .");
 
-              $.get("../contact/send/mail",{to:to,subject:subject,text:text},function(data){
+              $.post("../contact/send/mail",{email:email,name:name,phone:phone,message:message},function(data){
                     if(data=="sent"){
-                        $("#message").empty().html("El correo electrónico ha sido enviado correctamente a "+to+". Porfavor revisa tu bandeja de entrada.");
+                        $("#message").empty().html("El correo electrónico ha sido enviado correctamente, en breve tendras una respuesta de nuestro equipo.");
                         }
                   });
           });
