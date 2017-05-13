@@ -14,7 +14,8 @@ var smtpTransport = nodemailer.createTransport({
   host: 'smtp.gmail.com',
   // port:'587',
   // secure: true, // use TLS
-  auth: {user: 'mexprint3r@gmail.com', pass: 'Mexprint3r+2014'}
+
+  auth: {user: 'mexprint3r@gmail.com', pass: '************'}
 })
 /* ------------------SMTP Over----------------------------- */
 /* GET users listing. */
@@ -27,7 +28,7 @@ router.post('/send/mail', function (req, res, next) {
   var mailOpt={};
 
   var mailOptions = {
-    to: 'mextech.mx@gmail.com',
+    to: 'contacto@mextech.com.mx',
     subject: 'Solicitud de informacion de '+customer.email,
     text: 'Ha llegado una nueva solicitud de información de :\r\n*'+customer.name+'\r\n*'+customer.email+'\r\n*'+customer.phone+'\r\n*'+customer.message,
   }
